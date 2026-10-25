@@ -1,0 +1,25 @@
+[project]
+name = "splitcheck"
+version = "0.1.0"
+description = "Catch train/test leakage in a tabular split: duplicates, shared ids, time overlap, target leaks."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Aghasalim Mustafazada" }]
+requires-python = ">=3.9"
+dependencies = ["pandas>=1.5"]
+
+[project.scripts]
+splitcheck = "splitcheck:main"
+
+[project.urls]
+Repository = "https://github.com/aghasalim/splitcheck"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["splitcheck"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
