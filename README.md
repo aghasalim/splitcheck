@@ -10,10 +10,10 @@ splitcheck train.csv test.csv --target y --group user_id --time created_at
 ```
 
 ```
-FAIL: 9.1% of test rows are exact duplicates of train rows
-FAIL: 181 'user' values in both splits, covering 83.3% of test rows
-FAIL: train extends 25.0 days past the first test row in 'day'
-WARN: 'score_after' alone scores AUC 1.000: possible target leak
+FAIL: 9.0% of test rows are exact duplicates of train rows
+FAIL: 323 'user_id' values in both splits, covering 99.1% of test rows
+FAIL: train extends 119.0 days past the first test row in 'day'
+WARN: 'refund_flag' alone scores AUC 1.000: possible target leak
 ```
 
 ![splitcheck run on a leaky split and a clean split](docs/demo_run.png)
