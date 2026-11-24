@@ -1,5 +1,3 @@
-<p align="center"><img src="assets/banner.jpg" alt="Line drawing of two stacks of table rows separated by a wall, with one row slipping through a crack" width="100%"></p>
-
 # splitcheck
 
 [![CI](https://github.com/aghasalim/splitcheck/actions/workflows/ci.yml/badge.svg)](https://github.com/aghasalim/splitcheck/actions/workflows/ci.yml)
