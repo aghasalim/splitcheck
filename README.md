@@ -16,7 +16,7 @@ FAIL: train extends 119.0 days past the first test row in 'day'
 WARN: 'refund_flag' alone scores AUC 1.000: possible target leak
 ```
 
-![splitcheck run on a leaky split and a clean split](docs/demo_run.png)
+![splitcheck run on a leaky split and a clean split](figures/demo_run.png)
 
 A real run on a synthetic event log with four planted leaks (random row split, 50 copied rows, a column that equals the target), then on a clean user and time split of the same data. `python scripts/make_figures.py` rebuilds it.
 
@@ -29,7 +29,7 @@ A real run on a synthetic event log with four planted leaks (random row split, 5
 | Time overlap | train has rows later than the first test row | `--time COL` |
 | Target leak | one column alone predicts a binary target (AUC at or above 0.98, a warning) | `--auc-threshold` |
 
-![the four checks and what each compares](docs/checks.png)
+![the four checks and what each compares](figures/checks.png)
 
 What each check reads. The target-leak check only looks at the training file.
 

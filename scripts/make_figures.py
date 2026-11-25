@@ -1,8 +1,8 @@
-"""Make the README figures: python scripts/make_figures.py -> docs/*.png
+"""Make the README figures: python scripts/make_figures.py -> figures/*.png
 
-1. docs/demo_run.png: a real run of the CLI on a split with four planted leaks,
+1. figures/demo_run.png: a real run of the CLI on a split with four planted leaks,
    and on a clean split of the same data. The output text is captured, not typed.
-2. docs/checks.png: what each of the four checks compares.
+2. figures/checks.png: what each of the four checks compares.
 """
 import subprocess
 import sys
@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.patches import FancyBboxPatch  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-DOCS = ROOT / "docs"
+DOCS = ROOT / "figures"
 
 
 def example(seed=0, n_users=400, rows_per_user=5):
